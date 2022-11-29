@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid darkgray;
+  background-color: white;
+  text-align: center;
+  gap: 10px;
+  padding: 15px;
+  width: 343px;
+  color: darkgray;
+}
+
+.card__image {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}

@@ -1,0 +1,44 @@
+.product__container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  color: darkgray;
+  gap: 20px;
+}
+
+.product__image {
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+}
+
+.info__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 5px;
+}
+
+.bid__button {
+  width: 100%;
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 7px;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .product__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+.list__container--center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}

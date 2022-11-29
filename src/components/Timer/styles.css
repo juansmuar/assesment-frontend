@@ -1,0 +1,15 @@
+.timer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+}
+
+.timer__button {
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 7px;
+  color: whitesmoke;
+  padding: 10px;
+}
