@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Assesment Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. El Sprint Planning al comienzo del Sprint, lo realiza el equipo completo y en el se mira el backlog y se elijen los items que se vana trabajar.
 
-## Available Scripts
+- Daily: Reuni[on diara corta en la que cada miembro del equipo expone que ha hecho para cumplir con sus items y si tiene algun impedimento para cumplir alguno.
 
-In the project directory, you can run:
+- Sprint Review: Al final del sprint se revisa y evalua lo alcanzado, tambien se actualiza el backlog con nuevos requirimientos.
 
-### `npm start`
+- Retrospectiva: Se hace luego del sprint review en ella los miembros del equipo exponene que ha ido bien, que pudo fallar y posibles mejoras para el proximo sprint.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Los wireframes son respresentacione visuales de la estructura y suncionalidad de una pagina web. Sireven para definir la estructura basica de una pagina y hacerse una idea mas tangible de ella.
+3. - Var: Era la forma en que se declaraban variables antes de ES6, su alcance puede ser global o local según donde se declare. var puede ser redeclarado en cualquier momento, lo que puede causar errores.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   - let: Las variables let tienen un alcance de bloque ({}) y pueden ser modificadas dentro de su ambito, pero no pueden ser redeclaradas. Si embargo si se pueden redeclarar en otro bloque y ser[an tomadas como variables diferentes.
 
-### `npm test`
+   - const: Al igual que let tienen un alcance de bloque pero no pueden ser modificadas ni redeclaradas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. - git branch rama-1
 
-### `npm run build`
+- git checkout -b rama-1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Git merge fusiona dos ramas manteniendo el historial de commits en paralelo, git rebase toma los commits de la rama actual y los lleva hasta el final del historial de la rama sobra la cual se hara rebase.
+6. Un pull request es un peticion que se realiza para comparar los cambios realizados localmente con el repositorio remoto, una vez este pr es aprobado los cambios se fusionan y se integran al repositorio remoto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+un git pull se usa en el repositorio local para traer la ultima version del repositorio remoto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. Es una representacion del DOM guardada en memoria, es un intemediario entre la aplicacion y el dom. Cuando hay cambios en los estados de la aplicacion este calcula la mejor forma de actualizar el DOM.
 
-### `npm run eject`
+8.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+.c-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px;
+  gap: 30px;
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+.c-section__title {
+  width: 100%;
+  background-color: black;
+  border-top: 10px solid grey;
+  color: whitesmoke;
+  text-align: center;
+  padding: 15px;
+}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+.c-services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
-## Learn More
+.c-services__item {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  list-style: none;
+  padding: 20px;
+}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+.c-services__item:hover {
+  box-shadow: 0px 2px 3px grey;
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+h3 {
+  text-indent: 50px;
+}
+```
