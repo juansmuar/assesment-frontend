@@ -7,9 +7,15 @@
 }
 
 .timer__button {
-  background-color: darkgoldenrod;
+  background-color: gray;
   border: none;
   border-radius: 7px;
   color: whitesmoke;
   padding: 10px;
+}
+
+.timer__button:hover {
+  background-color: darkgoldenrod;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
 }

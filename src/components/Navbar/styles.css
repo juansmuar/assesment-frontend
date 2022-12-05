@@ -1,0 +1,49 @@
+.navbar__container {
+  display: block;
+  background-color: whitesmoke;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu__list {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.menu__link {
+  color: gray;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.menu__link:hover {
+  color: darkslategray;
+}
+
+.menu__item {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    align-items: flex-end;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    height: 40px;
+    margin-right: 30px;
+  }
+}

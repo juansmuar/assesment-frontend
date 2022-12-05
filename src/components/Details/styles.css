@@ -32,7 +32,7 @@
   padding: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .product__container {
     display: grid;
     grid-template-columns: 40% 60%;
