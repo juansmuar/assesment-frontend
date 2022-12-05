@@ -16,7 +16,7 @@ const Details = ({ product = {} }) => {
 
   return (
     <div className="product__container">
-      <img src={image} alt="NFT" className="product__image" />
+      <img src={image} alt={title} className="product__image" />
       <section className="info__container">
         <h1 className="product__title--color">{title}</h1>
         <h3 className="product__category"><span className="product__title--color">Category: </span>{category}</h3>
