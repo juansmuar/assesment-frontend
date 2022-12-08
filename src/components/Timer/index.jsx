@@ -64,7 +64,7 @@ const Timer = (props) => {
     <div className="timer__container">
       <h2>{timer}</h2>
       <Link style={{ pointerEvents: active ? '' : 'none' }} to={`/detalle/${id}`} className="card__link">
-        <button className="timer__button" type="button">Go to detail</button>
+        <button className={active ? 'timer__button' : 'timer__button--inactive'} type="button">Go to detail</button>
       </Link>
     </div>
   );

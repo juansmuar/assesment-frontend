@@ -19,3 +19,12 @@
   border-radius: 20px;
   transition: 0.2s ease-in-out;
 }
+
+.timer__button--inactive {
+  background-color: rgba(128, 128, 128, 0.082);
+  border: none;
+  border-radius: 7px;
+  color: rgb(214, 213, 213);
+  padding: 10px;
+  transition: 0.3s ease-in;
+}

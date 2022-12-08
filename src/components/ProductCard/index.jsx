@@ -2,8 +2,7 @@ import './styles.css';
 import PropTypes from 'prop-types';
 import Timer from '../Timer';
 
-const ProductCard = (props) => {
-  const { id, title, image } = props;
+const ProductCard = ({ id, title, image }) => {
   return (
     <section className="card">
       <img src={image} alt={title} className="card__image" />

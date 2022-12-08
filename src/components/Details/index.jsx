@@ -7,12 +7,7 @@ const Details = ({ product = {} }) => {
     title,
     description,
     category,
-    // rating,
   } = product;
-  // const {
-  //   rate,
-  //   count,
-  // } = rating;
 
   return (
     <div className="product__container">
@@ -21,8 +16,6 @@ const Details = ({ product = {} }) => {
         <h1 className="product__title--color">{title}</h1>
         <h3 className="product__category"><span className="product__title--color">Category: </span>{category}</h3>
         <p><span className="product__title--color">Description: </span>{description}</p>
-        {/* <p>{rate}</p>
-        <p>{count}</p> */}
         <button className="bid__button" type="button">Add to cart</button>
       </section>
     </div>
